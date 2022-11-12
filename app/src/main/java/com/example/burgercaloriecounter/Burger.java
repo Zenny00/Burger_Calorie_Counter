@@ -20,7 +20,7 @@ public class Burger {
     {
         //Init to constants
         mPattyCal = BEEF;
-        mCheeseCal = ASIAGO;
+        mCheeseCal = CREME_FRAICHE;
         //Init to 0
         mProsciuttoCal = 0;
         mSauceCal = 0;

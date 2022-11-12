@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="0dp"
+    android:paddingBottom="10dp"
+    tools:context=".MyActivity"
+    android:background="@drawable/background">
+
+    <!-- BURGER WITH TITLE -->
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/topbun"
+        android:contentDescription="@string/app_name" />
+
+    <!-- RADIO GROUP CONTAINING BUTTONS FOR PATTY TYPES -->
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView1"
+        android:layout_centerHorizontal="true" >
+
+        <!-- BUTTON 1 -->
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/one"
+            android:textColor="@color/red" />
+
+        <!-- BUTTON 2 -->
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/two"
+            android:textColor="@color/red" />
+
+        <!-- BUTTON 3 -->
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/three"
+            android:textColor="@color/red" />
+
+    </RadioGroup>
+
+    <!-- CHECKBOX FOR PROSCIUTTO -->
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_centerHorizontal="true"
+        android:text="@string/prosciutto"
+        android:textColor="@color/red" />
+
+    <!-- RADIO GROUP FOR CHEESES -->
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/checkBox1"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <!-- BUTTON 1 -->
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/cheddar"
+            android:textColor="@color/red" />
+
+        <!-- BUTTON 2 -->
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/provolone"
+            android:textColor="@color/red" />
+
+    </RadioGroup>
+
+    <!-- SAUCE LABEL AND SEEK BAR -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/sauce"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/red" />
+
+    <SeekBar
+        android:id="@+id/seekBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/radioGroup2"
+        android:layout_alignRight="@id/radioGroup2"
+        android:layout_below="@id/textView1" />
+
+    <!-- BURGER BOTTOM BUN -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/seekBar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/bottombun"
+        android:contentDescription="@string/app_name" />
+
+    <!-- CALORIE OUTPUT TEXT -->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/calorie"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/red" />
+
+</RelativeLayout>

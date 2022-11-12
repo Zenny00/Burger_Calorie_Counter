@@ -6,8 +6,8 @@
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="0dp"
-    android:paddingBottom="10dp"
+    android:paddingTop="@dimen/output_margin_buffer"
+    android:paddingBottom="@dimen/output_margin_buffer"
     tools:context=".MyActivity"
     android:background="@drawable/background">
 
@@ -36,7 +36,7 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/one"
-            android:textColor="@color/red" />
+            android:textColor="@color/white" />
 
         <!-- BUTTON 2 -->
         <RadioButton
@@ -45,7 +45,7 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/two"
-            android:textColor="@color/red" />
+            android:textColor="@color/white" />
 
         <!-- BUTTON 3 -->
         <RadioButton
@@ -54,7 +54,7 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/three"
-            android:textColor="@color/red" />
+            android:textColor="@color/white" />
 
     </RadioGroup>
 
@@ -66,7 +66,7 @@
         android:layout_below="@+id/radioGroup1"
         android:layout_centerHorizontal="true"
         android:text="@string/prosciutto"
-        android:textColor="@color/red" />
+        android:textColor="@color/white" />
 
     <!-- RADIO GROUP FOR CHEESES -->
     <RadioGroup
@@ -84,7 +84,7 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/cheddar"
-            android:textColor="@color/red" />
+            android:textColor="@color/white" />
 
         <!-- BUTTON 2 -->
         <RadioButton
@@ -93,7 +93,7 @@
             android:layout_height="wrap_content"
             android:checked="true"
             android:text="@string/provolone"
-            android:textColor="@color/red" />
+            android:textColor="@color/white" />
 
     </RadioGroup>
 
@@ -104,10 +104,10 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/radioGroup2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/sauce"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:textColor="@color/red" />
+        android:textColor="@color/white" />
 
     <SeekBar
         android:id="@+id/seekBar1"
@@ -124,7 +124,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/seekBar1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="0dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/bottombun"
         android:contentDescription="@string/app_name" />
 
@@ -136,7 +136,8 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:text="@string/calorie"
+        android:layout_marginBottom="30dp"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textColor="@color/red" />
+        android:textColor="@color/white" />
 
 </RelativeLayout>
